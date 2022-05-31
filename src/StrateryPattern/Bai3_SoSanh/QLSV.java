@@ -38,7 +38,6 @@ public class QLSV {
         sv.sort((o1,o2) ->{
             return soSanh.soSanh(o1,o2);
         });
-    
     }
     
     public void inDS(){
