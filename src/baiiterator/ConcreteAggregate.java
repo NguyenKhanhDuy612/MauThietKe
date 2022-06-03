@@ -1,0 +1,49 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package baiiterator;
+
+/**
+ *
+ * @author minht
+ */
+public class ConcreteAggregate extends Aggregate<Object>{
+   
+    
+     Object[] menuItems;
+//
+//    public Object[] getMenuItems(int i) {
+//        return menuItems;
+//    }
+
+
+
+    public void setMenuItems(Object[] menuItems) {
+        this.menuItems = menuItems;
+    }
+     
+     
+     
+      @Override
+    Iterator<Object> createIterator() {
+        return new  ConcreteIterator(this);
+      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+
+    public int Count()
+    {
+        return menuItems.length;
+       
+    }
+    
+    Object GetItem(int i)
+    {
+        return menuItems[i];
+    }
+
+   
+    
+}
