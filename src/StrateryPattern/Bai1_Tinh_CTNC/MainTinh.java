@@ -20,12 +20,16 @@ public class MainTinh {
         ITinh t = new  Tru();
         ITinh n = new  Nhan();
         ITinh ch = new  Chia();
+        ITinh lt = new  LuyThua();
 
         tcontext.setTinhToan(c);
         System.out.println("75 + 12 = "+tcontext.Tinh(75, 12));
         
         tcontext.setTinhToan(t);
         System.out.println("54 - 78 = "+tcontext.Tinh(54, 78));
+        
+        tcontext.setTinhToan(lt);
+        System.out.println("2^2 = " + tcontext.Tinh(2, 2));
 
     }
     
